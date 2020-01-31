@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Persona" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAACAQAAAA=</HashCode>
+      <FileName>Persona.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Empleado" Collapsed="true">
+    <Position X="2.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Empleado.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Telefono" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Telefono.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domicilio.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.AdministradorFondoPensiones">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdministradorFondoPensiones.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Regimen">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Regimen.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="GaskSoft.Munidi.Gesrehu.Entities.EEstadoCivil" Collapsed="true">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>EEstadoCivil.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
