@@ -27,6 +27,7 @@ Public Class ObservableListSource(Of T As Class)
     End Property
 
     Public Function GetList() As IList Implements IListSource.GetList
+
         If _bindingList Is Nothing Then
             _bindingList = ToBindingList()
         End If
