@@ -5,6 +5,7 @@ Public Class Persona
     Property ApellidoPaterno As String
     Property ApellidoMaterno As String
     Property Nombres As String
-    Property EstadoCivil As EEstadoCivil
-    Property FechaNacimiento As Date
+
+    Property EmpleadoResponsableDni As String
+    Property EmpleadoResponsable As Empleado
 End Class

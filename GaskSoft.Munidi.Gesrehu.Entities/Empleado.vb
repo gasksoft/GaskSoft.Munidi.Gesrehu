@@ -2,11 +2,6 @@
 
 Public Class Empleado
     Inherits Persona
-    Sub New()
-        Telefonos = New ObservableListSource(Of Telefono)
-    End Sub
-    Overridable ReadOnly Property Telefonos As ObservableListSource(Of Telefono)
-    Overridable Property Domicilio As Domicilio
-    Overridable Property Regimen As Regimen
-    Overridable Property AdministradorFondoPensiones As AdministradorFondoPensiones
+    Property PersonasDependientes As New ObservableListSource(Of Persona)
+    Property Contratos As New ObservableListSource(Of Contrato)
 End Class

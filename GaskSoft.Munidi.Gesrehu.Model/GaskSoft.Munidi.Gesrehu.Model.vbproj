@@ -5,12 +5,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00BAF0DF-74BC-4340-A3B9-179BAFAEC120}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>GaskSoft.Munidi.Gesrehu.Entities</RootNamespace>
-    <AssemblyName>GaskSoft.Munidi.Gesrehu.Entities</AssemblyName>
+    <ProjectGuid>{00E5EC42-A90F-468F-B690-E0261C94ED95}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GaskSoft.Munidi.Gesrehu.Model</RootNamespace>
+    <AssemblyName>GaskSoft.Munidi.Gesrehu.Model</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>Windows</MyType>
+    <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Entities.xml</DocumentationFile>
+    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Model.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Entities.xml</DocumentationFile>
+    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Model.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -46,6 +46,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GaskSoft.Munidi.Gesrehu.Model.My.MyApplication</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
@@ -56,6 +59,9 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -74,16 +80,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concurso.vb" />
-    <Compile Include="ContratadoCas.vb" />
-    <Compile Include="Contrato.vb" />
-    <Compile Include="Designacion.vb" />
-    <Compile Include="Dl1057.vb" />
-    <Compile Include="Dl276.vb" />
-    <Compile Include="Dl728.vb" />
-    <Compile Include="Empleado.vb" />
-    <Compile Include="ContratoIndeterminado.vb" />
-    <Compile Include="Funcionario.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Migrations\Configuration.vb" />
+    <Compile Include="ModelContext.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,17 +103,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ContratoNombrado.vb" />
-    <Compile Include="ContratoPermanente.vb" />
-    <Compile Include="ObreroMunicipal.vb" />
-    <Compile Include="Persona.vb" />
-    <Compile Include="Proceso.vb" />
-    <Compile Include="Regimen.vb" />
-    <Compile Include="ContratoTemporal.vb" />
-    <Compile Include="ServidorContratado.vb" />
-    <Compile Include="ServidorNombrado.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -119,7 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Dl 1057 CAS.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -135,6 +132,10 @@
     <ProjectReference Include="..\GaskSoft.Munidi.Gesrehu.Core.NetFramework\GaskSoft.Munidi.Gesrehu.Core.NetFramework.vbproj">
       <Project>{19FD05EC-1BB3-4E60-B78D-D1920A840790}</Project>
       <Name>GaskSoft.Munidi.Gesrehu.Core.NetFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GaskSoft.Munidi.Gesrehu.Entities\GaskSoft.Munidi.Gesrehu.Entities.vbproj">
+      <Project>{00BAF0DF-74BC-4340-A3B9-179BAFAEC120}</Project>
+      <Name>GaskSoft.Munidi.Gesrehu.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
