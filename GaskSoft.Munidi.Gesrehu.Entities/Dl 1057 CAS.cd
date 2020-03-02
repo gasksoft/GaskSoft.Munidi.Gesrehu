@@ -3,18 +3,20 @@
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Empleado">
     <Position X="4.75" Y="3" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Empleado.vb</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Domicilio" />
+    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="PersonasDependientes" />
-      <Property Name="Contratos" />
+      <Property Name="Dependientes" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Contrato">
     <Position X="5.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAICIgAAAAAAAAAAAQAAAAAQAAAIAAAAA=</HashCode>
+      <HashCode>AAACAABAAAAAIAIAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Contrato.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -47,12 +49,9 @@
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Proceso">
     <Position X="2" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Proceso.vb</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Contratos" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Regimen">
     <Position X="14" Y="5.5" Width="1.5" />
@@ -60,15 +59,12 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Regimen.vb</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Contratos" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoIndeterminado">
     <Position X="6.5" Y="7.25" Width="1.5" />
     <InheritanceLine Type="GaskSoft.Munidi.Gesrehu.Entities.Contrato" FixedFromPoint="true">
       <Path>
-        <Point X="6.25" Y="6.623" />
+        <Point X="6.25" Y="6.046" />
         <Point X="6.25" Y="6.875" />
         <Point X="7.25" Y="6.875" />
         <Point X="7.25" Y="7.25" />
@@ -80,23 +76,23 @@
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Persona">
-    <Position X="9.75" Y="2.5" Width="2.25" />
+    <Position X="9" Y="1.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAEAAAAAAAAAAAgAAAAAACAAAEAA=</HashCode>
+      <HashCode>EAEAAACAAAAAAAAAAEAAAAAAAAAABgAAAAAACAQAAAA=</HashCode>
       <FileName>Persona.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="EmpleadoResponsable" />
+      <Property Name="Responsable" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Concurso">
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Concurso" Collapsed="true">
     <Position X="1" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Concurso.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Designacion">
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Designacion" Collapsed="true">
     <Position X="2.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -157,6 +153,20 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dl276.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratadoRecas" Collapsed="true">
+    <Position X="10" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContratadoRecas.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio" Collapsed="true">
+    <Position X="1.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domicilio.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

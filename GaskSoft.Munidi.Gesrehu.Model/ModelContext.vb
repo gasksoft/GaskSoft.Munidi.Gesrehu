@@ -18,10 +18,11 @@ Public Class ModelContext
     Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
         modelBuilder.Entity(Of Persona).
             ToTable(NameOf(Persona)).
-            HasKey(Function(x) x.Dni).
-            HasOptional(Function(x) x.EmpleadoResponsable).
-            WithMany(Function(x) x.PersonasDependientes).
-            HasForeignKey(Function(x) x.EmpleadoResponsableDni)
+            HasKey(Function(x) x.Dni)
+
+        modelBuilder.Entity(Of Persona).
+            HasOptional(Function(x) x.Responsable).
+            WithMany(Function(x) x.Dependientes)
 
         modelBuilder.Entity(Of Empleado).
             ToTable(NameOf(Empleado))
@@ -29,18 +30,15 @@ Public Class ModelContext
         modelBuilder.Entity(Of Contrato).
             ToTable(NameOf(Contrato)).
             HasRequired(Function(x) x.Proceso).
-            WithMany(Function(x) x.Contratos).
-            HasForeignKey(Function(x) x.ProcesoId)
+            WithMany(Function(x) x.Contratos)
 
         modelBuilder.Entity(Of Contrato).
             HasRequired(Function(x) x.Regimen).
-            WithMany(Function(x) x.Contratos).
-            HasForeignKey(Function(x) x.RegimenId)
+            WithMany(Function(x) x.Contratos)
 
         modelBuilder.Entity(Of Contrato).
             HasRequired(Function(x) x.Empleado).
-            WithMany(Function(x) x.Contratos).
-            HasForeignKey(Function(x) x.EmpleadoDni)
+            WithMany(Function(x) x.Contratos)
 
         modelBuilder.Entity(Of Regimen).
             ToTable(NameOf(Regimen))

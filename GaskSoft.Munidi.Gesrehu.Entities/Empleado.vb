@@ -2,6 +2,8 @@
 
 Public Class Empleado
     Inherits Persona
-    Property PersonasDependientes As New ObservableListSource(Of Persona)
-    Property Contratos As New ObservableListSource(Of Contrato)
+
+    Public Property Domicilio As New Domicilio
+    Public Property Dependientes As New ObservableListSource(Of Persona)
+    Public Property Contratos As New ObservableListSource(Of Contrato)
 End Class
