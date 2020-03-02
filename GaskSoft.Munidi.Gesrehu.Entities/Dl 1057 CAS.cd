@@ -76,7 +76,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Persona">
-    <Position X="9" Y="1.75" Width="1.75" />
+    <Position X="9" Y="2" Width="1.75" />
     <TypeIdentifier>
       <HashCode>EAEAAACAAAAAAAAAAEAAAAAAAAAABgAAAAAACAQAAAA=</HashCode>
       <FileName>Persona.vb</FileName>
@@ -162,12 +162,12 @@
       <FileName>ContratadoRecas.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio" Collapsed="true">
-    <Position X="1.75" Y="3.25" Width="1.5" />
+  <Struct Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio" Collapsed="true">
+    <Position X="9" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domicilio.vb</FileName>
     </TypeIdentifier>
-  </Class>
+  </Struct>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

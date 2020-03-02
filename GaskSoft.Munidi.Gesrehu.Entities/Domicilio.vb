@@ -1,4 +1,4 @@
-﻿Public Class Domicilio
+﻿Public Structure Domicilio
     Property Ubigeo As String
     Property Direccion As String
-End Class
+End Structure
