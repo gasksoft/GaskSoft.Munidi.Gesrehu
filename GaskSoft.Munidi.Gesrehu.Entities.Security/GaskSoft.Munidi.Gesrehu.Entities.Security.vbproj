@@ -1,20 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00BAF0DF-74BC-4340-A3B9-179BAFAEC120}</ProjectGuid>
+    <ProjectGuid>{0DFD7388-7473-4AB8-9ABE-620CC525BA07}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>GaskSoft.Munidi.Gesrehu.Entities</RootNamespace>
-    <AssemblyName>GaskSoft.Munidi.Gesrehu.Entities</AssemblyName>
+    <RootNamespace>GaskSoft.Munidi.Gesrehu.Entities.Security</RootNamespace>
+    <AssemblyName>GaskSoft.Munidi.Gesrehu.Entities.Security</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +19,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Entities.xml</DocumentationFile>
+    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Entities.Security.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +28,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Entities.xml</DocumentationFile>
+    <DocumentationFile>GaskSoft.Munidi.Gesrehu.Entities.Security.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -47,14 +44,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -74,18 +64,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concurso.vb" />
-    <Compile Include="ContratadoCas.vb" />
-    <Compile Include="ContratadoRecas.vb" />
-    <Compile Include="Contrato.vb" />
-    <Compile Include="Designacion.vb" />
-    <Compile Include="Dl1057.vb" />
-    <Compile Include="Dl276.vb" />
-    <Compile Include="Dl728.vb" />
-    <Compile Include="Domicilio.vb" />
-    <Compile Include="EEstadoCivil.vb" />
-    <Compile Include="Empleado.vb" />
-    <Compile Include="ContratoIndeterminado.vb" />
+    <Compile Include="Completo.vb" />
+    <Compile Include="Limitado.vb" />
+    <Compile Include="Modulo.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -101,15 +82,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ContratoNombrado.vb" />
-    <Compile Include="ContratoPermanente.vb" />
-    <Compile Include="ObreroMunicipal.vb" />
-    <Compile Include="Persona.vb" />
-    <Compile Include="PlazoContrato.vb" />
-    <Compile Include="Proceso.vb" />
-    <Compile Include="ContratoTemporal.vb" />
-    <Compile Include="ServidorContratado.vb" />
-    <Compile Include="ServidorNombrado.vb" />
+    <Compile Include="Permiso.vb" />
+    <Compile Include="Restringido.vb" />
+    <Compile Include="Sistema.vb" />
+    <Compile Include="SubSistema.vb" />
+    <Compile Include="Usuario.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -120,8 +97,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="Dl 1057 CAS.cd" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -131,25 +107,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GaskSoft.Munidi.Gesrehu.CommonHelpers\GaskSoft.Munidi.Gesrehu.CommonHelpers.vbproj">
-      <Project>{c3161eb4-f706-4a1a-b7c0-aed475fee052}</Project>
-      <Name>GaskSoft.Munidi.Gesrehu.CommonHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GaskSoft.Munidi.Gesrehu.Core.NetFramework\GaskSoft.Munidi.Gesrehu.Core.NetFramework.vbproj">
-      <Project>{19FD05EC-1BB3-4E60-B78D-D1920A840790}</Project>
-      <Name>GaskSoft.Munidi.Gesrehu.Core.NetFramework</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
-  </Target>
-  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
 </Project>

@@ -1,3 +1,3 @@
 ﻿Public MustInherit Class ContratoIndeterminado
-    Inherits Contrato
+    Inherits PlazoContrato
 End Class

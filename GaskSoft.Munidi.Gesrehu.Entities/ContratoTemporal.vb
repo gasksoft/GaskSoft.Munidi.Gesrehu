@@ -1,4 +1,4 @@
 ﻿Public Class ContratoTemporal
-    Inherits Contrato
+    Inherits PlazoContrato
     Property Final As Date
 End Class

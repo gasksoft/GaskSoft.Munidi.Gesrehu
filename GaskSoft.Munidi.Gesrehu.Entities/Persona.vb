@@ -6,7 +6,7 @@ Public Class Persona
     Public Property ApellidoMaterno As String
     Public Property Nombres As String
     Public Property EstadoCivil As EEstadoCivil
-    Public Property FechaNacimiento As Date?
+    Public Property FechaNacimiento As Date
 
     Public Property Responsable As Empleado
 

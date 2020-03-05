@@ -1,3 +1,3 @@
 ﻿Public MustInherit Class Dl276
-    Inherits Regimen
+    Inherits Contrato
 End Class

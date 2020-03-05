@@ -1,3 +1,3 @@
 ﻿Public MustInherit Class Dl1057
-    Inherits Regimen
+    Inherits Contrato
 End Class

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Empleado">
-    <Position X="4.75" Y="3" Width="2.25" />
+    <Position X="5.25" Y="2.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAgAAAAAI=</HashCode>
       <FileName>Empleado.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -11,65 +11,51 @@
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Dependientes" />
+      <Property Name="Contratos" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Contrato">
     <Position X="5.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAABAAAAAIAIAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <HashCode>AAACAABAAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contrato.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Empleado" />
       <Property Name="Proceso" />
-      <Property Name="Regimen" />
+      <Property Name="PlazoContrato" />
     </ShowAsAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoTemporal">
-    <Position X="4.5" Y="7.25" Width="1.5" />
+    <Position X="10.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratoTemporal.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoPermanente">
-    <Position X="7.75" Y="9" Width="1.5" />
+    <Position X="13.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratoPermanente.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoNombrado">
-    <Position X="5.5" Y="9" Width="1.5" />
+    <Position X="11.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratoNombrado.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Proceso">
-    <Position X="2" Y="5.25" Width="1.5" />
+    <Position X="2" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Proceso.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Regimen">
-    <Position X="14" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAQAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Regimen.vb</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoIndeterminado">
-    <Position X="6.5" Y="7.25" Width="1.5" />
-    <InheritanceLine Type="GaskSoft.Munidi.Gesrehu.Entities.Contrato" FixedFromPoint="true">
-      <Path>
-        <Point X="6.25" Y="6.046" />
-        <Point X="6.25" Y="6.875" />
-        <Point X="7.25" Y="6.875" />
-        <Point X="7.25" Y="7.25" />
-      </Path>
-    </InheritanceLine>
+    <Position X="12.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratoIndeterminado.vb</FileName>
@@ -82,6 +68,7 @@
       <FileName>Persona.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
+      <Property Name="EstadoCivil" />
       <Property Name="Responsable" />
     </ShowAsAssociation>
   </Class>
@@ -99,75 +86,85 @@
       <FileName>Designacion.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Funcionario" Collapsed="true">
-    <Position X="17.5" Y="8" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Funcionario.vb</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ServidorNombrado" Collapsed="true">
-    <Position X="11.75" Y="9.25" Width="1.5" />
+    <Position X="4.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServidorNombrado.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ServidorContratado" Collapsed="true">
-    <Position X="13.75" Y="9.25" Width="1.5" />
+    <Position X="6.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ServidorContratado.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratadoCas" Collapsed="true">
-    <Position X="10" Y="9.25" Width="1.5" />
+    <Position X="3" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratadoCas.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ObreroMunicipal" Collapsed="true">
-    <Position X="15.5" Y="9.25" Width="1.5" />
+    <Position X="8.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ObreroMunicipal.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Dl728" Collapsed="true">
-    <Position X="15.5" Y="8" Width="1.5" />
+    <Position X="8.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dl728.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Dl1057" Collapsed="true">
-    <Position X="10" Y="8" Width="1.5" />
+    <Position X="3" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dl1057.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Dl276" Collapsed="true">
-    <Position X="12.75" Y="8" Width="1.5" />
+    <Position X="5.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Dl276.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratadoRecas" Collapsed="true">
-    <Position X="10" Y="10.25" Width="1.5" />
+    <Position X="3" Y="10.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratadoRecas.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio" Collapsed="true">
-    <Position X="9" Y="3" Width="1.5" />
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.PlazoContrato">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>PlazoContrato.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Contrato" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio" Collapsed="true">
+    <Position X="5.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domicilio.vb</FileName>
     </TypeIdentifier>
-  </Struct>
+  </Class>
+  <Enum Name="GaskSoft.Munidi.Gesrehu.Entities.EEstadoCivil" Collapsed="true">
+    <Position X="12.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAABAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>EEstadoCivil.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -13,6 +13,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GaskSoft.Munidi.Gesrehu.Ent
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GaskSoft.Munidi.Gesrehu.CommonHelpers", "GaskSoft.Munidi.Gesrehu.CommonHelpers\GaskSoft.Munidi.Gesrehu.CommonHelpers.vbproj", "{C3161EB4-F706-4A1A-B7C0-AED475FEE052}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GaskSoft.Munidi.Gesrehu.Entities.Security", "GaskSoft.Munidi.Gesrehu.Entities.Security\GaskSoft.Munidi.Gesrehu.Entities.Security.vbproj", "{0DFD7388-7473-4AB8-9ABE-620CC525BA07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C3161EB4-F706-4A1A-B7C0-AED475FEE052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3161EB4-F706-4A1A-B7C0-AED475FEE052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3161EB4-F706-4A1A-B7C0-AED475FEE052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFD7388-7473-4AB8-9ABE-620CC525BA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFD7388-7473-4AB8-9ABE-620CC525BA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFD7388-7473-4AB8-9ABE-620CC525BA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFD7388-7473-4AB8-9ABE-620CC525BA07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
