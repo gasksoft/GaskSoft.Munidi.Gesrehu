@@ -17,7 +17,7 @@
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Contrato">
     <Position X="5.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAABAAAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAABAAAAAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Contrato.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -27,21 +27,21 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoTemporal">
-    <Position X="10.5" Y="6.75" Width="1.5" />
+    <Position X="10.75" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>ContratoTemporal.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoPermanente">
-    <Position X="13.75" Y="8.5" Width="1.5" />
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoPermanente" Collapsed="true">
+    <Position X="15.25" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratoPermanente.vb</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoNombrado">
-    <Position X="11.5" Y="8.5" Width="1.5" />
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoNombrado" Collapsed="true">
+    <Position X="13" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratoNombrado.vb</FileName>
@@ -53,9 +53,12 @@
       <HashCode>AAACAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Proceso.vb</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Contratos" />
+    </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoIndeterminado">
-    <Position X="12.5" Y="6.75" Width="1.5" />
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.ContratoIndeterminado" Collapsed="true">
+    <Position X="14" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ContratoIndeterminado.vb</FileName>
@@ -143,20 +146,38 @@
     </TypeIdentifier>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.PlazoContrato">
-    <Position X="11.5" Y="4.75" Width="1.5" />
+    <Position X="12.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAI=</HashCode>
       <FileName>PlazoContrato.vb</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Contrato" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio" Collapsed="true">
-    <Position X="5.25" Y="1" Width="1.5" />
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Domicilio">
+    <Position X="5.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domicilio.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Adenda">
+    <Position X="11" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Adenda.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ETipoAdenda" />
+      <Property Name="Contrato" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Ubigeo">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ubigeo.vb</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="GaskSoft.Munidi.Gesrehu.Entities.EEstadoCivil" Collapsed="true">
@@ -164,6 +185,13 @@
     <TypeIdentifier>
       <HashCode>CAAAABAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>EEstadoCivil.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="GaskSoft.Munidi.Gesrehu.Entities.ETipoAdenda">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>ETipoAdenda.vb</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

@@ -15,6 +15,22 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GaskSoft.Munidi.Gesrehu.Com
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GaskSoft.Munidi.Gesrehu.Entities.Security", "GaskSoft.Munidi.Gesrehu.Entities.Security\GaskSoft.Munidi.Gesrehu.Entities.Security.vbproj", "{0DFD7388-7473-4AB8-9ABE-620CC525BA07}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{55686850-3D2F-4B15-8C8A-61998FCC180D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Infraestructura", "1. Infraestructura", "{762CB698-2711-4DD3-9380-40646A487042}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Dominio", "2. Dominio", "{6DEB133E-349B-4010-BA48-37B8CDA10408}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Aplicacion", "3. Aplicacion", "{D37EF074-DA79-4CB9-9B2A-C6CC7C83C1BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Servicios Distribuidos", "4. Servicios Distribuidos", "{1E8FE892-C4F6-4B86-9345-F0842CB91E64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Presentacion", "5. Presentacion", "{FF1EB0B6-470F-483E-A686-0D11EF0CF0C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Transversal", "6. Transversal", "{6D114C61-498D-4261-9114-FCE4829DEE63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.1 Entidades", "2.1 Entidades", "{54C05F2E-2DD2-45E2-9ECE-60236E0FC1A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +64,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00BAF0DF-74BC-4340-A3B9-179BAFAEC120} = {54C05F2E-2DD2-45E2-9ECE-60236E0FC1A0}
+		{19FD05EC-1BB3-4E60-B78D-D1920A840790} = {55686850-3D2F-4B15-8C8A-61998FCC180D}
+		{00E5EC42-A90F-468F-B690-E0261C94ED95} = {55686850-3D2F-4B15-8C8A-61998FCC180D}
+		{4CBAD1DC-0F0E-4A97-A12E-A862437BC15E} = {54C05F2E-2DD2-45E2-9ECE-60236E0FC1A0}
+		{C3161EB4-F706-4A1A-B7C0-AED475FEE052} = {55686850-3D2F-4B15-8C8A-61998FCC180D}
+		{0DFD7388-7473-4AB8-9ABE-620CC525BA07} = {54C05F2E-2DD2-45E2-9ECE-60236E0FC1A0}
+		{54C05F2E-2DD2-45E2-9ECE-60236E0FC1A0} = {6DEB133E-349B-4010-BA48-37B8CDA10408}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3DA05D7-ED9D-4774-A946-5760ED076D6C}

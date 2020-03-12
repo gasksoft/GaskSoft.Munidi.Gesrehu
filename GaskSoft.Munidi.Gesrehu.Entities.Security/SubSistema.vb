@@ -1,13 +1,8 @@
-﻿Public Class SubSistema
-    Property Id As Integer
-    Property Nombre As String
-    Property Modulos As ICollection(Of Modulo)
+﻿Imports GaskSoft.Munidi.Gesrehu.Core.NetFramework
 
-    Public Property Sistema As Sistema
-        Get
-            Return Nothing
-        End Get
-        Set(value As Sistema)
-        End Set
-    End Property
+Public Class SubSistema
+    Public Property Id As Integer
+    Public Property Nombre As String
+    Public Overridable ReadOnly Property Modulos As ObservableListSource(Of Modulo)
+    Public Overridable Property Sistema As Sistema
 End Class

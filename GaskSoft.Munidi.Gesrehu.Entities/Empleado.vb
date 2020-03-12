@@ -2,8 +2,9 @@
 
 Public Class Empleado
     Inherits Persona
-    Property Ruc As String
-    Public Property Domicilio As New Domicilio
-    Public Property Dependientes As New ObservableListSource(Of Persona)
-    Public Property Contratos As New ObservableListSource(Of Contrato)
+
+    Public Property Ruc As String
+    Public Overridable Property Domicilio As New Domicilio
+    Public Overridable ReadOnly Property Dependientes As New ObservableListSource(Of Persona)
+    Public Overridable ReadOnly Property Contratos As New ObservableListSource(Of Contrato)
 End Class

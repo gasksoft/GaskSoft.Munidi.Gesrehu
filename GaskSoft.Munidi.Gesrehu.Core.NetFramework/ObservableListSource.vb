@@ -9,14 +9,14 @@ Public Class ObservableListSource(Of T As Class)
 
     Private _bindingList As IBindingList
 
-    Sub New()
+    Public Sub New()
     End Sub
 
-    Sub New(collection As IEnumerable(Of T))
+    Public Sub New(collection As IEnumerable(Of T))
         MyBase.New(collection)
     End Sub
 
-    Sub New(list As Collection(Of T))
+    Public Sub New(list As Collection(Of T))
         MyBase.New(list)
     End Sub
 

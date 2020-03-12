@@ -1,4 +1,7 @@
-﻿Public Class ContratoTemporal
+﻿Imports GaskSoft.Munidi.Gesrehu.Core.NetFramework
+
+Public Class ContratoTemporal
     Inherits PlazoContrato
-    Property Final As Date
+
+    Public Property Dias As Integer
 End Class

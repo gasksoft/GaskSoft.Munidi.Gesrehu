@@ -1,6 +1,8 @@
-﻿Public Class Modulo
-    Property Id As Integer
-    Property Nombre As String
+﻿Imports GaskSoft.Munidi.Gesrehu.Core.NetFramework
+
+Public Class Modulo
+    Public Property Id As Integer
+    Public Property Nombre As String
     Public Property SubSistema As SubSistema
-    Property Permisos As ICollection(Of Permiso)
+    Public Overridable ReadOnly Property Permisos As ObservableListSource(Of Permiso)
 End Class

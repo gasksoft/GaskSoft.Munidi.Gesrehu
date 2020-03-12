@@ -1,7 +1,7 @@
 ﻿Imports GaskSoft.Munidi.Gesrehu.Core.NetFramework
 
 Public MustInherit Class Proceso
-    Property Id As Integer
-    Property Fecha As Date
-    Property Contratos As New ObservableListSource(Of Contrato)
+    Public Property Id As Integer
+    Public Property Fecha As Date
+    Public Overridable ReadOnly Property Contratos As New ObservableListSource(Of Contrato)
 End Class

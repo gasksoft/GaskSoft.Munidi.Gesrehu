@@ -9,9 +9,6 @@
     <ShowAsAssociation>
       <Property Name="SubSistema" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Permisos" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Security.Permiso" Collapsed="true">
     <Position X="5.5" Y="3.5" Width="1.5" />
@@ -33,9 +30,6 @@
     <ShowAsAssociation>
       <Property Name="Sistema" />
     </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Modulos" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GaskSoft.Munidi.Gesrehu.Entities.Security.Usuario" Collapsed="true">
     <Position X="2.25" Y="3.5" Width="1.5" />
@@ -74,9 +68,6 @@
       <HashCode>AAACAAAAAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Sistema.vb</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="SubSistemas" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
