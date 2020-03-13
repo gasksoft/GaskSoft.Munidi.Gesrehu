@@ -24,7 +24,6 @@ Partial Class Acceso
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Acceso))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -48,8 +47,8 @@ Partial Class Acceso
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.GroupBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -58,18 +57,9 @@ Partial Class Acceso
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.InfoText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 56)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(958, 283)
+        Me.GroupBox1.Size = New System.Drawing.Size(484, 303)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Location = New System.Drawing.Point(377, 183)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox3.TabIndex = 4
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "GroupBox3"
         '
         'TextBox2
         '
@@ -121,7 +111,6 @@ Partial Class Acceso
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 146)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(308, 54)
@@ -148,7 +137,7 @@ Partial Class Acceso
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Image = Global.GaskSoft.Munidi.Gesrehu.Presentacion.WinForm.My.Resources.Resources.close_icon
-        Me.Button2.Location = New System.Drawing.Point(173, 12)
+        Me.Button2.Location = New System.Drawing.Point(78, 195)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(96, 36)
         Me.Button2.TabIndex = 1
@@ -164,7 +153,7 @@ Partial Class Acceso
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(984, 26)
+        Me.Panel1.Size = New System.Drawing.Size(510, 26)
         Me.Panel1.TabIndex = 5
         '
         'PictureBox2
@@ -192,7 +181,7 @@ Partial Class Acceso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(984, 409)
+        Me.ClientSize = New System.Drawing.Size(510, 429)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label3)
@@ -224,5 +213,4 @@ Partial Class Acceso
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents GroupBox3 As GroupBox
 End Class
