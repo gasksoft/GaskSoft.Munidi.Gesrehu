@@ -1,3 +1,3 @@
 ﻿Public MustInherit Class Dl728
-    Inherits Regimen
+    Inherits Contrato
 End Class

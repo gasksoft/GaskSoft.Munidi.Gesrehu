@@ -1,4 +1,4 @@
-﻿Public Class DateHelper
+﻿Public NotInheritable Class DateHelper
     Private Sub New()
     End Sub
 

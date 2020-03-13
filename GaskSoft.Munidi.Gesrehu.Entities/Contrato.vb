@@ -1,7 +1,9 @@
-﻿Public MustInherit Class Contrato
-    Property Id As Integer
-    Property Inicio As Date
-    Property Empleado As Empleado
+﻿Imports GaskSoft.Munidi.Gesrehu.Core.NetFramework
+
+Public MustInherit Class Contrato
+    Public Property Id As Integer
+    Public Property Empleado As Empleado
     Public Property Proceso As Proceso
-    Public Property Regimen As Regimen
+    Public Property PlazoContrato As PlazoContrato
+    Public Overridable ReadOnly Property Adendas As ObservableListSource(Of Adenda)
 End Class
