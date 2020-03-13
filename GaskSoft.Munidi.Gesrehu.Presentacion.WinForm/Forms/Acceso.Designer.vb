@@ -24,6 +24,7 @@ Partial Class Acceso
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Acceso))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -35,7 +36,6 @@ Partial Class Acceso
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -61,6 +61,15 @@ Partial Class Acceso
         Me.GroupBox1.Size = New System.Drawing.Size(958, 283)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Location = New System.Drawing.Point(468, 53)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox3.TabIndex = 4
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "GroupBox3"
         '
         'TextBox2
         '
@@ -178,15 +187,6 @@ Partial Class Acceso
         Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Location = New System.Drawing.Point(502, 38)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox3.TabIndex = 4
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "GroupBox3"
         '
         'Acceso
         '
