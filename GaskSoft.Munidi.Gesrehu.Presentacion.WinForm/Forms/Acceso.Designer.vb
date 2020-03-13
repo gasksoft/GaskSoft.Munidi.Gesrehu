@@ -64,7 +64,7 @@ Partial Class Acceso
         '
         'GroupBox3
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(468, 53)
+        Me.GroupBox3.Location = New System.Drawing.Point(639, 162)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox3.TabIndex = 4
