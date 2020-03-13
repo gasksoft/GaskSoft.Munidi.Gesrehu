@@ -30,11 +30,12 @@ Partial Class Acceso
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -47,6 +48,7 @@ Partial Class Acceso
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.GroupBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -56,7 +58,7 @@ Partial Class Acceso
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.InfoText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 56)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(308, 84)
+        Me.GroupBox1.Size = New System.Drawing.Size(958, 283)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         '
@@ -117,38 +119,6 @@ Partial Class Acceso
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(334, 26)
-        Me.Panel1.TabIndex = 5
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = Global.GaskSoft.Munidi.Gesrehu.Presentacion.WinForm.My.Resources.Resources.minimazar
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(281, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox2.TabIndex = 7
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.GaskSoft.Munidi.Gesrehu.Presentacion.WinForm.My.Resources.Resources.cerrar
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox1.Location = New System.Drawing.Point(306, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -177,11 +147,52 @@ Partial Class Acceso
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(984, 26)
+        Me.Panel1.TabIndex = 5
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = Global.GaskSoft.Munidi.Gesrehu.Presentacion.WinForm.My.Resources.Resources.minimazar
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(281, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox2.TabIndex = 7
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.GaskSoft.Munidi.Gesrehu.Presentacion.WinForm.My.Resources.Resources.cerrar
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox1.Location = New System.Drawing.Point(306, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Location = New System.Drawing.Point(502, 38)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox3.TabIndex = 4
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "GroupBox3"
+        '
         'Acceso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(334, 210)
+        Me.ClientSize = New System.Drawing.Size(984, 409)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label3)
@@ -213,4 +224,5 @@ Partial Class Acceso
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents GroupBox3 As GroupBox
 End Class
